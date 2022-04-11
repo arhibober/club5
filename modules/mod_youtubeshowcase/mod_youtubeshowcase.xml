@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6" client="site" method="upgrade">
+	<name>Youtube Showcase</name>
+	<author>Vijay Padsumbiya</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@pulseinfotech.com</authorEmail>
+	<authorUrl>www.pulseextensions.com</authorUrl>
+	<version>1.2</version>
+	<description>Youtube Showcase</description>
+	<files>
+		<filename module="mod_youtubeshowcase">mod_youtubeshowcase.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>js/jquery.min.js</filename>
+		<filename>js/index.html</filename>
+		 
+	</files>
+	
+	<config>
+		<fields name="params">
+	
+		<fieldset name="basic">
+		
+		<field name="left_margin" type="text" default="15" label="Left Margin" description="Enter Left Margin"/>
+		<field name="top_margin" type="text" default="5" label="Top Margin" description="Enter Top Margin"/>
+		
+		<field name="video_panel_width" type="text" default="450" label="Video Panel Width" description="Enter Video Panel Width"/>
+		<field name="video_panel_height" type="text" default="300" label="Video Panel Height" description="Enter Video Panel Height"/>
+		
+		<field name="thumb_panel_width" type="text" default="150" label="Thumb Panel Width" description="Enter Thumb Panel Width"/>
+		<field name="thumb_panel_height" type="text" default="300" label="Thumb Panel Height" description="Enter Thumb Panel Height"/>
+		
+		<field name="video_auto_play" type="list" default="2" label="Video Auto Play" description="Video Auto Play">
+		<option value="1">On</option>
+		<option value="2">Off</option>
+		</field>
+		
+		<field name="allow_full_screen" type="list" default="2" label="Allow Full Screen" description="Full Screen Option">
+		<option value="1">On</option>
+		<option value="2">Off</option>
+		</field>
+		
+		<field name="youtube_video_number" type="list" default="3" label="Youtube Menu Number" description="How much Youtube Video you want">
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		</field>
+		
+		
+		<field name="youtube_url1" type="text" default="http://www.youtube.com/watch?v=QBBWKvY-VDc" label="Youtube Video1 URL" description="Enter Youtube Video1 URL"/>
+		<field name="youtube_video1_title" type="text" default="Video1 Title Display here" label="Youtube Video1 Title" description="Enter Youtube Video1 Title"/>
+		
+		<field name="youtube_url2" type="text" default="http://www.youtube.com/watch?v=ZXMQqLnRhRI" label="Youtube Video2 URL" description="Enter Youtube Video2 URL"/>
+		<field name="youtube_video2_title" type="text" default="Video2 Title Display here" label="Youtube Video2 Title" description="Enter Youtube Video2 Title"/>
+		
+		<field name="youtube_url3" type="text" default="http://www.youtube.com/watch?v=XwZtoHLWcBk" label="Youtube Video3 URL" description="Enter Youtube Video3 URL"/>
+		<field name="youtube_video3_title" type="text" default="Video3 Title Display here" label="Youtube Video3 Title" description="Enter Youtube Video3 Title"/>
+		
+		<field name="youtube_url4" type="text" default="http://www.youtube.com/watch?v=QBBWKvY-VDc" label="Youtube Video4 URL" description="Enter Youtube Video4 URL"/>
+		<field name="youtube_video4_title" type="text" default="Video4 Title Display here" label="Youtube Video4 Title" description="Enter Youtube Video4 Title"/>
+		
+		<field name="youtube_url5" type="text" default="http://www.youtube.com/watch?v=ZXMQqLnRhRI" label="Youtube Video5 URL" description="Enter Youtube Video5 URL"/>
+		<field name="youtube_video5_title" type="text" default="Video5 Title Display here" label="Youtube Video5 Title" description="Enter Youtube Video5 Title"/>
+		
+		<field name="youtube_url6" type="text" default="http://www.youtube.com/watch?v=XwZtoHLWcBk" label="Youtube Video6 URL" description="Enter Youtube Video6 URL"/>
+		<field name="youtube_video6_title" type="text" default="Video6 Title Display here" label="Youtube Video6 Title" description="Enter Youtube Video6 Title"/>
+		
+		<field name="youtube_url7" type="text" default="http://www.youtube.com/watch?v=QBBWKvY-VDc" label="Youtube Video7 URL" description="Enter Youtube Video7 URL"/>
+		<field name="youtube_video7_title" type="text" default="Video7 Title Display here" label="Youtube Video7 Title" description="Enter Youtube Video7 Title"/>
+		
+		<field name="youtube_url8" type="text" default="http://www.youtube.com/watch?v=XwZtoHLWcBk" label="Youtube Video8 URL" description="Enter Youtube Video8 URL"/>
+		<field name="youtube_video8_title" type="text" default="Video8 Title Display here" label="Youtube Video8 Title" description="Enter Youtube Video8 Title"/>
+		
+		<field name="youtube_url9" type="text" default="http://www.youtube.com/watch?v=ZXMQqLnRhRI" label="Youtube Video9 URL" description="Enter Youtube Video9 URL"/>
+		<field name="youtube_video9_title" type="text" default="Video9 Title Display here" label="Youtube Video9 Title" description="Enter Youtube Video9 Title"/>
+		
+		<field name="youtube_url10" type="text" default="http://www.youtube.com/watch?v=QBBWKvY-VDc" label="Youtube Video10 URL" description="Enter Youtube Video10 URL"/>
+		<field name="youtube_video10_title" type="text" default="Video10 Title Display here" label="Youtube Video10 Title" description="Enter Youtube Video10 Title"/>
+		
+	</fieldset>
+	</fields>
+	
+</config>
+</extension>

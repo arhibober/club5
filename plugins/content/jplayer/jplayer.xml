@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+	<name>Content - JPlayer</name>
+	<author>MaxSVK</author>
+	<authorEmail>max.lv@centrum.sk</authorEmail>
+	<authorUrl>http://vault.futurama.sk/joomla/</authorUrl>
+	<copyright>Copyright (c) 2010 Max. All rights reserved.</copyright>
+	<creationDate>2011-05-29</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU GPLv2</license>
+	<version>1.6.2</version>
+	<description>PLG_JPLAYER_THANKS_FOR_INSTALLING</description>
+
+	<config>
+	<fields name="params">
+
+		<fieldset name="basic">
+
+		<field name="" type="header" default="" label="PLG_JPLAYER_VIDEO_PARAMETERS" description="" addfieldpath="/plugins/content/jplayer/elements" />
+		<field name="videofolder" type="text" default="media/video" size="40" label="PLG_JPLAYER_VIDEO_FOLDER" description="PLG_JPLAYER_VIDEO_FOLDER_DESC" />
+		<field name="videowidth" type="text" default="400" size="4" label="PLG_JPLAYER_VIDEO_WIDTH" description="" />
+		<field name="videoheight" type="text" default="300" size="4" label="PLG_JPLAYER_VIDEO_HEIGHT" description="" />
+
+		<field name="" type="header" default="" label="PLG_JPLAYER_AUDIO_PARAMETERS" description="" addfieldpath="/plugins/content/jplayer/elements" />
+		<field name="audiofolder" type="text" default="media/audio" size="40" label="PLG_JPLAYER_AUDIO_FOLDER" description="PLG_JPLAYER_AUDIO_FOLDER_DESC" />
+		<field name="audiowidth" type="text" default="300" size="4" label="PLG_JPLAYER_AUDIO_WIDTH" description="" />
+		<field name="audioheight" type="text" default="20" size="4" label="PLG_JPLAYER_AUDIO_HEIGHT" description="" />
+
+		<field name="" type="header" default="" label="PLG_JPLAYER_YOUTUBE_PARAMETERS" description="" addfieldpath="/plugins/content/jplayer/elements" />
+		<field name="youtuberelated" type="radio" default="1" label="PLG_JPLAYER_RELATED_VIDEOS" description="PLG_JPLAYER_RELATED_VIDEOS_DESC">
+			<option value="0">PLG_JPLAYER_NO</option>
+			<option value="1">PLG_JPLAYER_YES</option>
+		</field>
+		<field name="youtubeborder" type="radio" default="0" label="PLG_JPLAYER_BORDERS" description="PLG_JPLAYER_BORDERS_DESC">
+			<option value="0">PLG_JPLAYER_NO</option>
+			<option value="1">PLG_JPLAYER_YES</option>
+		</field>
+		<field name="youtubecolors" type="list" default="0" label="PLG_JPLAYER_COLORS" description="PLG_JPLAYER_COLORS_DESC">
+			<option value="0">PLG_JPLAYER_DEFAULT</option>
+			<option value="1">PLG_JPLAYER_COLORS_1</option>
+			<option value="2">PLG_JPLAYER_COLORS_2</option>
+			<option value="3">PLG_JPLAYER_COLORS_3</option>
+			<option value="4">PLG_JPLAYER_COLORS_4</option>
+			<option value="5">PLG_JPLAYER_COLORS_5</option>
+			<option value="6">PLG_JPLAYER_COLORS_6</option>
+			<option value="7">PLG_JPLAYER_COLORS_7</option>
+			<option value="8">PLG_JPLAYER_COLORS_8</option>
+		</field>
+		<field name="youtuberesolution" type="list" default="2" label="PLG_JPLAYER_RESOLUTION" description="PLG_JPLAYER_RESOLUTION_DESC">
+			<option value="1">425x344</option>
+			<option value="2">480x385</option>
+			<option value="3">640x505</option>
+			<option value="4">960x745</option>
+			<option value="5">PLG_JPLAYER_CUSTOM</option>
+		</field>
+		<field name="youtubewidth" type="text" default="480" size="4" label="PLG_JPLAYER_CUSTOM_WIDTH" description="" />
+		<field name="youtubeheight" type="text" default="385" size="4" label="PLG_JPLAYER_CUSTOM_HEIGHT" description="" />
+
+		<field name="" type="header" default="" label="PLG_JPLAYER_PLAYLIST_PARAMETERS" description="" addfieldpath="/plugins/content/jplayer/elements" />
+		<field name="playlistfolder" type="text" default="media/playlist" size="40" label="PLG_JPLAYER_PLAYLIST_FOLDER" description="PLG_JPLAYER_PLAYLIST_FOLDER_DESC" />
+		<field name="playlistsize" type="text" default="350" size="4" label="PLG_JPLAYER_PLAYLIST_SIZE" description="PLG_JPLAYER_PLAYLIST_SIZE_DESC" />
+		<field name="playlistposition" type="list" default="bottom" label="PLG_JPLAYER_PLAYLIST_POSITION" description="">
+			<option value="top">PLG_JPLAYER_TOP</option>
+			<option value="bottom">PLG_JPLAYER_BOTTOM</option>
+		</field>
+		<field name="shuffle" type="radio" default="0" label="PLG_JPLAYER_SHUFFLE" description="PLG_JPLAYER_SHUFFLE_DESC">
+			<option value="0">PLG_JPLAYER_NO</option>
+			<option value="1">PLG_JPLAYER_YES</option>
+		</field>
+
+		<field name="" type="header" default="" label="PLG_JPLAYER_PLAYER_PARAMETERS" description="" addfieldpath="/plugins/content/jplayer/elements" />
+		<field name="playerversion" type="list" default="default" label="PLG_JPLAYER_PLAYER_VERSION" description="PLG_JPLAYER_PLAYER_VERSION_DESC">
+			<option value="4-3-132">4.3.132</option>
+			<option value="4-7-811">4.7.811</option>
+		</field>
+		<field name="controlbar" type="list" default="bottom" label="PLG_JPLAYER_CONTROLBAR_POSITION" description="">
+			<option value="top">PLG_JPLAYER_TOP</option>
+			<option value="bottom">PLG_JPLAYER_BOTTOM</option>
+			<option value="none">PLG_JPLAYER_NONE</option>
+		</field>
+		<field name="transparency" type="radio" default="transparent" label="PLG_JPLAYER_PLAYER_TRANSPARENCY" description="">
+			<option value="opaque">PLG_JPLAYER_NO</option>
+			<option value="transparent">PLG_JPLAYER_YES</option>
+		</field>
+		<field name="background" type="text" default="#FFFFFF" size="7" label="PLG_JPLAYER_BACKGROUND_COLOR" description="PLG_JPLAYER_BACKGROUND_COLOR_DESC" />
+		<field name="backcolor" type="text" default="" size="7" label="PLG_JPLAYER_PLAYER_BACKCOLOR" description="PLG_JPLAYER_PLAYER_BACKCOLOR_DESC" />
+		<field name="frontcolor" type="text" default="" size="7" label="PLG_JPLAYER_PLAYER_FRONTCOLOR" description="PLG_JPLAYER_PLAYER_FRONTCOLOR_DESC" />
+		<field name="lightcolor" type="text" default="" size="7" label="PLG_JPLAYER_PLAYER_LIGHTCOLOR" description="PLG_JPLAYER_PLAYER_LIGHTCOLOR_DESC" />
+		<field name="screencolor" type="text" default="" size="7" label="PLG_JPLAYER_PLAYER_SCREENCOLOR" description="PLG_JPLAYER_PLAYER_SCREENCOLOR_DESC" />
+
+		<field name="" type="header" default="" label="PLG_JPLAYER_GENERAL_PARAMETERS" description="" addfieldpath="/plugins/content/jplayer/elements" />
+		<field name="fullscreen" type="radio" default="1" label="PLG_JPLAYER_FULLSCREEN" description="PLG_JPLAYER_FULLSCREEN_DESC">
+			<option value="0">PLG_JPLAYER_NO</option>
+			<option value="1">PLG_JPLAYER_YES</option>
+		</field>
+		<field name="autoplay" type="radio" default="0" label="PLG_JPLAYER_AUTOPLAY" description="PLG_JPLAYER_AUTOPLAY_DESC">
+			<option value="0">PLG_JPLAYER_NO</option>
+			<option value="1">PLG_JPLAYER_YES</option>
+		</field>
+		<field name="repeat" type="list" default="none" label="PLG_JPLAYER_REPEAT" description="PLG_JPLAYER_REPEAT_DESC">
+			<option value="none">PLG_JPLAYER_NO</option>
+			<option value="always">PLG_JPLAYER_ALWAYS</option>
+			<option value="single">PLG_JPLAYER_SINGLE</option>
+		</field>
+		<field name="downloadLink" type="radio" default="1" label="PLG_JPLAYER_DOWNLOAD_LINK" description="PLG_JPLAYER_DOWNLOAD_LINK_DESC">
+			<option value="0">PLG_JPLAYER_NO</option>
+			<option value="1">PLG_JPLAYER_YES</option>
+		</field>
+		<field name="skin" type="text" default="" size="40" label="PLG_JPLAYER_SKIN" description="PLG_JPLAYER_SKIN_DESC" />
+		<field name="logo" type="text" default="" size="40" label="PLG_JPLAYER_LOGO" description="PLG_JPLAYER_LOGO_DESC" />
+		<field name="jplayerLink" type="radio" default="0" label="PLG_JPLAYER_JPLAYER_LINK" description="PLG_JPLAYER_JPLAYER_LINK_DESC">
+			<option value="0">PLG_JPLAYER_NO</option>
+			<option value="1">PLG_JPLAYER_YES</option>
+		</field>
+		<field name="registeredonly" type="radio" default="0" label="PLG_JPLAYER_REGISTERED_ONLY" description="">
+			<option value="0">PLG_JPLAYER_NO</option>
+			<option value="1">PLG_JPLAYER_YES</option>
+		</field>
+		<field name="registeredonlymsg" type="text" default="Only registered users can view player" size="50" label="PLG_JPLAYER_REGISTERED_ONLY_MSG" description="" />
+
+	</fieldset>
+
+	<fieldset name="advanced">
+		<field name="debugMode" type="radio" default="0" label="PLG_JPLAYER_DEBUG_MODE" description="PLG_JPLAYER_DEBUG_MODE_DESC">
+			<option value="0">PLG_JPLAYER_DISABLED</option>
+			<option value="1">PLG_JPLAYER_ENABLED</option>
+		</field>
+	</fieldset>
+
+	</fields>
+	</config>
+
+	<files>
+		<filename plugin="jplayer">jplayer.php</filename>
+		<filename>sources.php</filename>
+		<filename>index.html</filename>
+		<folder>elements</folder>
+		<folder>mediaplayer</folder>
+		<folder>playlist_samples</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_jplayer.ini</language>
+	</languages>
+
+</extension>

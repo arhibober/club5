@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content">
+	<name>PLG_SAUDIOPLAYER</name>
+	<version>1.2.1</version>
+	<creationDate>2011-06-20</creationDate>
+	<author>QIUHAO</author>
+	<authorEmail>5superbsd@gmail.com</authorEmail>
+	<authorUrl>http://www.aijoomla.com</authorUrl>
+	<license>GNU/GPLv2</license>
+	<copyright>Copyright (c) 2011</copyright>
+	<description>PLG_DESCRIPTION</description>
+	<files>
+		<filename plugin="saudioplayer">saudioplayer.php</filename>
+		<filename>index.html</filename>
+		<filename>donate.html</filename>
+		<folder>player</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="text" name="default_width" default="165" label="DEFAULT_WIDTH" description="DEFAULT_WIDTH_DESCRIPTION"  />
+				<field type="text" name="default_height" default="38" label="DEFAULT_HEIGHT" description="DEFAULT_HEIGHT_DESCRIPTION" />
+				<field type="text" name="default_folder" default="music" label="DEFAULT_FOLDER" description="DEFAULT_FOLDER_DESCRIPTION"/>
+				<field type="text" name="default_background_color" default="#FFFFFF" label="DEFAULT_BACKGROUND_COLOR" description="DEFAULT_BACKGROUND_COLOR_DESCRIPTION" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="SAudioPlayer Update Site">http://www.aijoomla.com/update/saudioplayer_update.xml</server>
+	</updateservers>
+</extension>
